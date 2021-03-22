@@ -5,6 +5,10 @@ import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
+// Import the apollo/react hooks from mutation and query
+// Import GET_ME from utils/queries
+// Import DELETE_BOOK from utils/mutations
+
 const SavedBooks = () => {
   const [userData, setUserData] = useState({});
 
