@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 
 // This might need to be commented out, just a reminder
@@ -60,7 +60,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so - Doja Cat (not really)
-  if (!userDataLength) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
