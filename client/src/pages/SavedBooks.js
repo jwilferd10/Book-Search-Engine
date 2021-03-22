@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 
-import { getMe, deleteBook } from '../utils/API';
+// This might need to be commented out, just a reminder
+// import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
@@ -50,7 +51,7 @@ const SavedBooks = () => {
 
       // const updatedUser = await response.json();
       // setUserData(updatedUser);
-      
+
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
     } catch (err) {
@@ -58,7 +59,7 @@ const SavedBooks = () => {
     }
   };
 
-  // if data isn't here yet, say so
+  // if data isn't here yet, say so - Doja Cat (not really)
   if (!userDataLength) {
     return <h2>LOADING...</h2>;
   }
